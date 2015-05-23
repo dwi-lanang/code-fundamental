@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Fundamental</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="imgs/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="imgs/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="imgs/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="imgs/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="imgs/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="imgs/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="imgs/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="imgs/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="imgs/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="imgs/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+	<link rel="manifest" href="imgs/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="imgs/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="Belajar dan berbagi pemrograman web" name="description">
+	<meta content="bootstrap,google,material,design,code,layout,fundamental,belajar,berbagi,web,aplikasi,application,php,javascript" name="keywords">
+	<meta content="dwilanang" name="author">
+	<meta property="og:title" content="Code Fundamental"/>
+	<meta property="og:image" content="http://dwilanang.github.io/code-fundamental/imgs/logo.png"/>
+	<meta property="og:description" content="Belajar dan berbagi pemrograman web"/>
+	<meta property="og:site_name" content="Toyota Connect" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@dwilanank" />
+    <meta name="twitter:creator" content="@dwilanank" />
+    <meta name="twitter:title" content="Code Fundamental" />
+    <meta name="twitter:description" content="Belajar dan berbagi pemrograman web" />
+    <meta name="twitter:image:src" content="http://dwilanang.github.io/code-fundamental/imgs/logo.png" />
+    <!-- Twitter Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design for Bootstrap -->
+    <link href="dist/css/roboto.min.css" rel="stylesheet">
+    <link href="dist/css/material-fullpalette.min.css" rel="stylesheet">
+    <link href="dist/css/snackbar.min.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="dist/js/jquery-2.0.3.min.js"></script>
+
+  </head>
+  <body style="background:#fff;">
+	<div class="navbar navbar-info">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="javascript:void(0)">{CODE}</a>
+		</div>
+		<div class="navbar-collapse collapse navbar-inverse-collapse">
+			<ul class="nav navbar-nav pull-right">
+				<li><a href="javascript:void(0)" onclick="share('http://www.facebook.com/share.php?u')"><img src="imgs/facebook_share.png" /></a></li>
+				<li><a href="javascript:void(0)" onclick="share('https://plus.google.com/share?url')"><img src="imgs/google_share.png" /></a></li>
+			</ul>
+		</div>
+	</div>    
+    
+<!-- HEADER 
+=================================-->
+
+<div style="margin-top:60px;margin-bottom:100px;" class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-12 col-sm-12">
+          <h1>CODE FUNDAMENTAL</h1>
+          <p>Berbagi & Belajar</p>
+        </div>
+      </div>
+    </div> 
+</div>
+<!-- /header container-->
+
+<!-- CONTENT
+=================================-->
+<div class="container">
+   
+  	<div class="row">
+        <div class="col-md-4">
+			<a class="btn btn-info btn-block btn-lg" href="http://github.com/dwilanang/code-started/">CODE STARTED</a>
+			<a class="btn btn-info btn-block btn-lg" href="../code-create-login-page/">CODE CREATE LOGIN PAGE</a>
+			<a class="btn btn-info btn-block btn-lg" href="../code-lib-php/">CODE LIBRARY APPLICATION PHP</a>
+			<a class="btn btn-info btn-block btn-lg">BOOTSTRAP MATERIAL DESIGN</a>
+			<a class="btn btn-info btn-block btn-lg">CODE STARTED</a>
+		</div>
+    </div>
+  	<hr>
+  	<a href="http://bootply.com/73778">Edit on Bootply</a>
+</div>
+<!-- Twitter Bootstrap -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Material Design for Bootstrap -->
+    <script src="dist/js/material.min.js"></script>
+    <script src="dist/js/snackbar.min.js"></script>
+	<script type="application/javascript">
+		function share(url){
+			window.open(url +"="+ document.URL,'Social Share', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=500,width=500');
+			return false;   
+		}
+		$.material.init();
+   
+		/*var activeid="UA-62808390-1";
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', activeid]);
+		_gaq.push(['_trackPageview']);
+
+		(function() { 
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		_gaq.push(['_trackPageview', window.location.pathname + window.location.search  + window.location.hash]);
+*/
+	</script>
+</body>
+</html>
