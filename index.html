@@ -79,7 +79,7 @@
   	<hr>
   	<a href="#">dwilanang</a>
 	<ul class="nav nav-pills pull-right">
-		<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm"><img src="imgs/android.svg" width="32" /></a></li>
+		<li id="android-app"><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm"><img src="imgs/android.svg" width="32" /></a></li>
 		<li><a href="http://facebook.com/codefundamental" target="_blank"><img src="//dwilanang.github.io/code-fundamental/imgs/facebook_share.png" /></a></li>
 		<li><a href="https://plus.google.com/u/0/100286844289144512774" target="_blank"><img src="//dwilanang.github.io/code-fundamental/imgs/google_share.png" /></a></li>
 	</ul>
@@ -97,6 +97,10 @@
     <!-- Material Design for Bootstrap -->
     <script src="dist/js/material.min.js"></script>
 	<script type="application/javascript">
+		if(window.location.hash)
+		{
+			document.getElementById("android-app").style.display = "none";
+		}
 		function share(url){
 			window.open(url +"="+ document.URL,'Social Share', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=500,width=500');
 			return false;   
